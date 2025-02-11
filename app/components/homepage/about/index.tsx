@@ -1,8 +1,6 @@
-// @flow strict
-
+import React from "react";
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
-
 
 function AboutSection() {
   return (
@@ -34,6 +32,6 @@ function AboutSection() {
       </div>
     </div>
   );
-};
+}
 
 export default AboutSection;

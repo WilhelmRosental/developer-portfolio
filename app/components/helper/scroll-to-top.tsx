@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa6";
 
@@ -20,7 +21,7 @@ const ScrollToTop = () => {
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll, { passive: true });
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

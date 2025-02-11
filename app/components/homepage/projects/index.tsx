@@ -1,10 +1,11 @@
-import { projectsData } from '@/utils/data/projects-data';
-import ProjectCard from './project-card';
+import React from "react";
+import { projectsData } from "@/utils/data/projects-data";
+import ProjectCard from "./project-card";
+import type { Project } from "@/types";
 
-const Projects = () => {
-
+function Projects() {
   return (
-    <div id='projects' className="relative z-50  my-12 lg:my-24">
+    <div id="projects" className="relative z-50  my-12 lg:my-24">
       <div className="sticky top-10">
         <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
         <div className="flex items-center justify-start relative">
@@ -32,6 +33,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Projects;
